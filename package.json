@@ -1,0 +1,25 @@
+{
+  "name": "newbootstrap-4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HungOm/newbootstrap-4.git"
+  },
+  "author": "Hung Om",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HungOm/newbootstrap-4/issues"
+  },
+  "homepage": "https://github.com/HungOm/newbootstrap-4#readme",
+  "description": ""
+}
