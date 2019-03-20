@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Om's Website projects #1</title>
+     <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-social.css" type="text/css">
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container justify-content-center">
+  <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto" >
+      <li class="nav-item active">
+        <a class="nav-link fas fa-home " href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fas fa-info-circle" href="aboutus.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fas fa-caret-square-down" href="#">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fas fa-address-book " href="contactus.html">Contact</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      <a data-toggle="modal" data-target="#loginModal"><span class="fas fa-sign-in-alt"></span> Login</a>
+    </span>
+  </div>
+</div>
+</nav>
+<div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" role="content">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h4 class="modal-title">Login</h4>
+
+        <button type="button" class="close" data-dismis="modal">
+          &times;
+        </button>
+        
+      </div>
+
+      <div class="modal-body">
+        
+        <form>
+        <div class="form-row ">
+          <div class="form-group col-sm-4">
+            <label class="sr-only" for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-sm-4">
+            <label class="sr-only" for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
+
+          <div class="form-group col-sm-auto align-self-center">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        </div>  
+    </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Ristorante con Fusion</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                  <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="align-self-center col-sm">
+                  <a href="#reservation"> <button type="button" class="btn btn-warning btn-lg col-12" data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom">Reserve Table</button></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class ="row row-content align-items-center">
+            <div class="col-sm-4 push-sm-8 col-md-3 push-md-9 order-md-last ">
+                <h3>Our Lipsmacking Culinary Creations</h3>
+            </div>
+
+            <div class="col-sm col-md">
+              <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
+                <div class="media-body">
+                  <h2 class="mt-0">Uthappizza<span class="badge badge-danger row-sm">HOT</span><span class="badge badge-pill badge-secondary row-sm">$4.99</span></h2>
+                  <p class="col d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                </div>
+              </div>
+            </div>
+
+            
+        </div>
+        <div><hr></div>
+
+
+        <div class ="row row-content align-items-center">
+            <div class="col-sm-4 col-md-3  order-md-first">
+                <h3>This Month's Promotions</h3>
+            </div>
+            <div class="col-sm col-md">
+              <div class="media">
+                <img class="d-flex ml-3 img-thumbnail align-self-center order-last" src="img/buffet.png" alt="uthappizza">
+                <div class="media-body">
+                <h2>Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                <p class="col d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+
+
+                </div>
+              </div>
+
+            </div>
+        </div>
+
+        <div><hr></div>
+
+        <div class ="row row-content align-items-center">
+            <div class="col-sm-4 col-md-3 order-md-last">
+                <h3>Meet our Culinary Specialists</h3>
+            </div>
+            <div class="col-sm col-md" >
+              <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto Somayya">
+                <div class="media-body">
+                  <h2> Alberto Somayya</h2>
+                  <h5>Executive Chef</h5>
+                  <p class="col d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div><hr></div>
+        <div id="reservation" class="row-content align-items-center col-sm-10 col-md-8 justify-content-center">
+          <div class="card text-white" >
+          <div class="card-header bg-warning ">Reserve a Table</div>
+          <div class="card-body text-dark">
+            <!-- <div class="radio row"> -->
+
+              <div class="row row-contents ml-2">
+              <div class="Guests order-first col-sm-5 col-md-4">
+                Number of Guests
+              </div>
+              <div class="radio-button col-sm col-md">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                    <label class="form-check-label" for="inlineRadio2">6</label>
+                  </div>
+                
+              </div>  
+
+
+              </div>
+              
+              <div class="date row row-content ml-2">
+                <div class="text order-first col-sm-5 col-md-4">
+                Date and Time
+              </div>
+
+                <!-- <div class="justify-content-center"> -->
+                  
+                  <div class="input-group col-sm col-md">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Date </div>
+                    </div>
+                      <input type="date" class="form-control" id="date" placeholder="date">
+                    </div>
+
+                    <div class="input-group col-sm col-md">
+
+                      <div class="input-group-prepend">
+                      <div class="input-group-text ">Time</div>
+                    </div>
+                      <input type="time" class="form-control" id="time" placeholder="time">
+                    </div>
+                  </div>
+                <!-- <div class="ml-2 row-lg justify-content-right col order-last"> -->
+
+                <div class="date row row-content ml-2 t-0">
+                <div class="text order-first col-sm-5 col-md-4">
+                
+              </div>
+
+                <!-- <div class="justify-content-center"> -->
+                  
+                  <div class="input-group col-sm col-md">
+                <button type="submit" class="btn btn-primary">Reserve</button>
+              </div>
+                
+              </div>
+              
+                
+
+              </div>
+              <!-- card body -->
+
+            </div>
+            <!-- #card head -->
+
+
+          </div>
+        <!-- #card  -->
+
+        </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                      121, Clear Water Bay Road<br>
+                      Clear Water Bay, Kowloon<br>
+                      HONG KONG<br>
+                      <i class="fa fa-phone"> Tel.: +852 1234 5678 </i><br>
+                      <span class="fa fa-fax"> Fax: +852 8765 4321</span><br>
+                      <span class="fa fa-envelope"> Email:</span> <a href="mailto:confusion@food.net">confusion@food.net</a>
+                   </address>
+                </div>
+                <div class="col col-sm-4 align-self-center">
+                    <div style="text-align: center">
+                        <a href="http://google.com/+"><i class="fab fa-google-plus fa-2x"></i></a>
+                        <a href="http://www.facebook.com/profile.php?id="><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="http://www.linkedin.com/in/"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="http://twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="http://youtube.com/"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="mailto:"><i class="fas fa-envelope-square fa-2x"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2015 Ristorante Con Fusion</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+ <!-- jQuery first, then Tether, then Bootstrap JS. -->
+   <!--  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+  
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+</body>
+
+
+</html>
