@@ -78,7 +78,11 @@ body{
 #navbarNav{
 	color: white;
 }
-
+#carouselButton {
+	right: 0px;
+	position: absolute;
+	bottom: 0px;
+}
 /*#reservation{
 	padding-right:100px !important;
 }*/
