@@ -7,9 +7,11 @@
     "bootstrap": "^4.0.0"
   },
   "devDependencies": {
-    "lite-server": "^2.4.0"
+    "lite-server": "^2.4.0",
+    "node-sass": "^4.7.2"
   },
   "scripts": {
+    "scss": "node-sass -o css/ css/",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"

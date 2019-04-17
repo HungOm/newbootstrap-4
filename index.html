@@ -21,7 +21,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container justify-content-center">
   <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,8 +42,8 @@
         <a class="nav-link fas fa-address-book " href="contactus.html">Contact</a>
       </li>
     </ul>
-    <span class="navbar-text">
-      <a data-toggle="modal" data-target="#loginModal"><span class="fas fa-sign-in-alt"></span> Login</a>
+    <span class="navbar-text" >
+      <a id="login"><span class="fas fa-sign-in-alt"></span> Login</a>
     </span>
   </div>
 </div>
@@ -56,7 +56,7 @@
 
         <h4 class="modal-title">Login</h4>
 
-        <button type="button" class="close" data-dismiss="modal">
+        <button type="button" class="close" id="modalDismiss">
           &times;
         </button>
         
@@ -88,7 +88,7 @@
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-default btn-sm" id="cancelBtn">Cancel</button>
         <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
       </div>
       
@@ -108,7 +108,7 @@
                   <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="align-self-center col-sm">
-                  <a data-target="#reservation" data-toggle="modal" > <button type="button" class="btn btn-warning btn-lg col-12" data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom">Reserve Table</button></a>
+                  <a id="reservationModal"> <button type="button" class="btn btn-warning btn-lg col-12" data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom">Reserve Table</button></a>
             </div>
         </div>
     </header>
@@ -244,7 +244,7 @@
 
                   <h4 class="modal-title">Reserce Table</h4>
 
-                  <button type="button" class="close" data-dismiss="modal">
+                  <button type="button" id="reverveButton" class="close">
                     &times;
                   </button>
                   
@@ -290,7 +290,7 @@
                         </div>
 
 
-                        <div class="row col">
+                        <div class="row col pt-2">
                           <div class="Text order-first col-sm-4 col-md-3">
                           Section
                         </div>
@@ -305,7 +305,7 @@
                         </div>
 
                               
-                        <div class="row col">
+                        <div class="row col pt-2">
                           <div class="Text order-first col-sm-4 col-md-3">
                           Date and  Time
                         </div>
@@ -328,13 +328,13 @@
                               </div>
                             </div>
 
-                      <div class="row col">
+                      <div class="row col pt-2">
                           <div class="Text order-first col-sm-4 col-md-3">
                        
                           </div>
 
                           <div class="col-sm col-md">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-secondary" id="reModalCancel">Cancel</button>
                             <button type="submit" class="btn btn-primary">Reserve</button>
                           </div>
 
@@ -429,6 +429,35 @@
     });
 
   });
+
+  // }
+$('#login').click(function(){
+
+  // $('#loginModal').modal('show');
+  // if $('#modalDismiss');
+  $('#loginModal').modal('toggle');
+  $('#modalDismiss').click(function(){
+    $('#loginModal').modal('hide');
+  });
+    $('#cancelBtn').click(function(){
+    $('#loginModal').modal('hide');
+  });
+
+
+});
+$('#reservationModal').click(function(){
+  $('#reservation').modal('toggle');
+  $('#reverveButton').click(function(){
+    $('#reservation').modal('hide');
+  });
+    $('#reModalCancel').click(function(){
+    $('#reservation').modal('hide');
+  });
+
+
+});
+
+
 </script>
 
 
